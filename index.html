@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bài tập vòng lặp</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon"
+        href="https://e7.pngegg.com/pngimages/673/919/png-clipart-arrow-computer-icons-loop-arrow-text-heart-thumbnail.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;400;500;700&family=Jost:wght@300;400;500;600;700;800;900&family=Lexend:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;700&family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-2">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="myBtn nav-link active" id="v-pills-home-tab" data-toggle="pill"
+                        data-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                        aria-selected="true"><i class="fa-solid fa-book"></i> Bài 1</button>
+                    <button class="myBtn nav-link" id="v-pills-profile-tab" data-toggle="pill"
+                        data-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                        aria-selected="false"><i class="fa-solid fa-book"></i> Bài 2</button>
+                </div>
+            </div>
+            <div class="col-10 py-5">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                        aria-labelledby="v-pills-home-tab">
+                        <h5>BÀI 1 : XÂY DỰNG CHỨC NĂNG ZOOM IN/ ZOM OUT CHO NGÔI NHÀ</h5>
+                        <div class="icon_house mt-4">
+                          <i class="fa-solid fa-house" id="homeIcon" style="font-size: 150px;"></i>
+                        </div>
+                        <button class="btn btn-primary px-5 mb-3 ml-2 mt-1" id="zoomIn"><i class="fa-solid fa-plus"></i></button>
+                        <button class="btn btn-primary px-5 mb-3 ml-2 mt-1" id="zoomOut"><i class="fa-solid fa-minus"></i></button>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                        aria-labelledby="v-pills-profile-tab">
+                        <h5>BÀI 2 : TĂNG SIZE ĐOẠN TEXT</h5>
+                       <div style="height: 250px;">
+                        <p id="text" style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique molestiae ratione est, repellendus expedita consectetur quas. Deleniti nihil, voluptate alias soluta dignissimos ratione labore id velit, tempora consectetur distinctio ad! Lorem ipsum dolor sit amet.</p>
+                       </div>
+                        <button id="zoomInText" class="btn btn-primary mt-5">TĂNG</button>
+                        <button id="zoomOutText" class="btn btn-primary mt-5">GIẢM</button>
+                      
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- cho folder common nằm trên folder js  -->
+    <script src="./common/method.js"></script>
+    <script src="./js/index.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

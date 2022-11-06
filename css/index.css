@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   font-family: 'Lexend', sans-serif;
+}
+
+body,
+html {
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    /* background-image: linear-gradient(90deg, #A100FFFF 0%, #71C4FFFF 100%); */
+    background-color: #444444;
+    
+    /* DÙNG min-height chiều cao nhỏ nhất là 100vh để set background  */
+    min-height: 100vh;
+}
+li{
+    font-family: 'Roboto', sans-serif!important;
+    font-size: 18px;
+}
+::-webkit-scrollbar {   
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ffffff;  /* fallback for old browsers */
+
+    margin-right: 5px;
+   
+}
+.icon_house{
+    width:250px;
+    height: 250px;
+}
+
+.myBtn {
+    outline: none;
+    border: none;
+    margin-bottom: 5px;
+    transition: .2s;
+    position: relative;
+}
+
+.myBtn:focus {
+    outline: none;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: black;
+}
+.col-2 {
+    background: #171717;
+    padding : 100px 20px;
+    position: relative;
+    z-index: 4;
+    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.8);
+    border-radius: 6px 0 0 6px;
+}
+.col-10 {
+    background-color:#EDEDED;
+    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.8);
+    border-radius: 0 6px 6px 0;
+    padding: 0 40px;
+}
+.box-hint {
+    padding: 20px;
+    background-color: #F6F5F5;
+    border-left: 8px solid #85e5e4;
+    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.8);
+    border-radius: 6px;
+
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: #DA0037;
+}
+.triangle {
+    position: relative;
+    z-index: 5;
+    top: -10px;
+    left: -206px;
+    display: inline-block;
+}
+.triangle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 10px solid black;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    transition: .5s;
+    z-index: 6;
+}
+.tab-content .collapsed .triangle::before {
+    transform: rotate(180deg);
+}
+.numberConnect{
+    display: none;
+}
